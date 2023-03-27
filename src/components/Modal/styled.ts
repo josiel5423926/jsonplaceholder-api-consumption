@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 export const ModalOverlay = styled.div`
   position: fixed;
   top: 0;
@@ -41,11 +43,11 @@ export const CloseButton = styled.button`
 `;
 
 export const ModalTitle = styled.h2`
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 16px;
+  font-weight: 900;
   color: ${(props) => props.theme["gray-800"]};
 `;
-import styled from "styled-components";
 
 export const ModalContent = styled.div`
   overflow-y: auto;
@@ -60,7 +62,7 @@ export const CommentName = styled.h3`
   font-size: 18px;
   margin-bottom: 8px;
   font-weight: 800;
-  color: ${(props) => props.theme["gray-500"]};
+  color: ${(props) => props.theme["gray-600"]};
 `;
 
 export const CommentEmail = styled.p`
